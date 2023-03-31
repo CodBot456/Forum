@@ -1,0 +1,21 @@
+.status_text {
+    font-size: 20px;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.status_input {
+
+    background-color: #202325;
+    color: azure;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.status_box {
+    display: flex;
+    justify-content: left;
+}

@@ -1,0 +1,47 @@
+.content {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+    height: 100%;
+    line-height: 64px;
+    padding: 0px 15px;
+    transition: 0.5s;
+}
+
+.avtorise a {
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+    height: 100%;
+    line-height: 64px;
+    padding: 0px 15px;
+    transition: 0.5s;
+}
+
+.navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.329);
+}
