@@ -1,10 +1,20 @@
+import { useEffect, useState } from "react"
 import Post from "../../Post/Post"
 
-function New(props) {
+
+function Hot(props) {
+    let [post_data, set_post_data] = useState([])
+
+    useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
+            .then(response => response.json())
+            .then(json => set_post_data(json))
+    })
+
     return (
         <div >
-            {props.post_data.map((el) => <Post author={el.author} title={el.title} key={el.id} />)}
+            {post_data.map((el) => <Post author={el.userId} title={el.title} content={el.body} key={el.id} />)}
         </div>
     )
 }
-export default New
+export default Hot
