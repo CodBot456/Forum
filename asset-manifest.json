@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Forum/static/css/main.55d04209.css",
+    "main.js": "/Forum/static/js/main.978abdc7.js",
+    "static/js/787.2b4bdbf7.chunk.js": "/Forum/static/js/787.2b4bdbf7.chunk.js",
+    "index.html": "/Forum/index.html",
+    "main.55d04209.css.map": "/Forum/static/css/main.55d04209.css.map",
+    "main.978abdc7.js.map": "/Forum/static/js/main.978abdc7.js.map",
+    "787.2b4bdbf7.chunk.js.map": "/Forum/static/js/787.2b4bdbf7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55d04209.css",
+    "static/js/main.978abdc7.js"
+  ]
+}
