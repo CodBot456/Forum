@@ -2,14 +2,10 @@ import { useState } from "react"
 import style from "./Panel.module.css"
 
 function Panel(props) {
-    function get_posts() {
-        fetch('https://jsonplaceholder.typicode.com/posts')
-            .then(response => response.json())
-            .then(json => console.log(json))
-    }
 
     let [status, set_status] = useState("статус")
     let [edit_status, set_edit_status] = useState(false)
+    // useState-перерисовать страницу если изменились данные
 
     return (
 

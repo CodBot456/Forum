@@ -1,18 +1,23 @@
 import { useEffect, useState } from "react"
 import Comments from "../comments/comments"
 import OpenPost from "../openPost/openPost"
+import { get_comments } from "../../../api/api"
 
 
 function Best(props) {
     let [comment_text, set_comment_text] = useState("")
     let [data, set_data] = useState([])
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/comments?_limit=10')
-            .then(response => response.json())
-            .then(json => set_data(json))
-    })
+        get_comments(10).then((response) => {//ответ от сервера
+            console.log(response)
+            set_data(response.data)
+        })
+
+    }, [])
     function add_comment() {
-        alert("gooood")
+        let new_post = [{ postId: 1, body: comment_text, name: "rony", email: "test_proecta@mail.ru" }]
+        set_data([...new_post, ...data])
+        set_comment_text("")
     }
     return (
         <div >

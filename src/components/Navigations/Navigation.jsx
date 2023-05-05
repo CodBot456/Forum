@@ -7,8 +7,10 @@ function Navigation(props) {
     return (
         <div className="navigation">
             <div className={style.container}>
+
                 <div className={style.content}>
                     <img src={logo} alt="" className={style.logo} />
+                    <input className={style.burger_togler} type="checkbox" />
                     <div className={style.navigation}>
                         <NavLink to="/hot">горячее</NavLink>
                         <NavLink to="/new">свежее</NavLink>
@@ -20,7 +22,13 @@ function Navigation(props) {
                         <NavLink to="/register">регистрация</NavLink>
                         <NavLink to="/login">вход</NavLink>
                     </div>
+                    <button className={style.burger_button}>
+                        <div className={style.burger_center_line}>
+
+                        </div>
+                    </button>
                 </div>
+
 
             </div>
         </div>

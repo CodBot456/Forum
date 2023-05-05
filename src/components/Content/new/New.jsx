@@ -10,7 +10,7 @@ function Hot(props) {
             .then(response => response.json())
             .then(json => set_post_data(json))
     })
-
+    // фетч-запросы в JavaScript
     return (
         <div >
             {post_data.map((el) => <Post author={el.userId} title={el.title} content={el.body} key={el.id} />)}

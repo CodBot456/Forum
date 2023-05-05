@@ -7,12 +7,13 @@ import Reg from "./components/registration/registration";
 import Log from "./components/login/login";
 
 function App(props) {
+  // пропсы - это обЪект который получает компоненту
   return (
     <div className="wrapper">
       <Navigation />
       <div className="container">
         <Routes>
-
+          {/* роуты - это пути сайта (следит за изменениями ссылки) */}
           <Route path='/register' element={<Reg />} />
           <Route path='/login' element={<Log />} />
           <Route path='/*' element={<Container post_data={props.post_data} />} />
